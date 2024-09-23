@@ -7,62 +7,35 @@
     <link rel="stylesheet" href="./style.css">
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
-            color: brown;
-            background: linear-gradient(to right, #f0f0f0, #fff5f5);
+            /* font-family: 'Courier New', Courier, monospace; */
+            font-family: 'Roboto', sans-serif;
+            color: #45a049;
         }
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 40px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: brown;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: darkred;
+            text-align: center; /* Center align text */
         }
         .project {
             margin-bottom: 20px;
             border: 1px solid #ccc;
             padding: 20px;
-            display: inline-block;
+            display: inline-block; /* Display projects in a line */
             width: 100%;
         }
         .project img {
             display: block;
             margin: 0 auto 10px;
-            transition: transform 0.3s ease;
         }
-        .project img:hover {
-            transform: scale(1.05);
+        .project .images-container {
+            display: flex;
+            justify-content: center;
         }
-        #themeToggle {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: brown;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        #themeToggle:hover {
-            background-color: darkred;
-        }
-        .dark-mode {
-            background-color: #333;
-            color: #fff;
+        .project .images-container img {
+            margin: 0 5px;
+            width: 200px;
+            height: auto;
         }
     </style>
 </head>
@@ -71,8 +44,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">About Me</a></li>
-                <li><a href="projects.html" aria-label="View Projects">Projects</a></li>
-                <li><a href="ethics.html">Ethics</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+
             </ul>
         </nav>
     </header>
@@ -81,36 +55,30 @@
         <div class="container">
             <img src="images/profile.png" alt="Profile Photo" style="width: 200px; height: auto;">
             <h1>Owen Jewell</h1>
-            <p>Sophomore at Iowa State</p>
+            <p>Junior at Iowa State</p>
             <p>Major: Computer Engineering</p>
             <p>Minor: Cybersecurity</p>
             <br>
-            <p>I have realized through my classes that I am passionate about software engineering.
-               Right now I am working on some personal projects when I can find time outside of class.
-               The one I am most excited about is a chess game I am working on as I find that chess is 
-               a fun hobby. Soon I plan to enhance this website through better design choices and including
-               javascript. I am also excited to start my classes in cybersecurity as I think they will be 
+            <p>Hello, my name is Owen and I have realized through my classes that I am passionate about software engineering (after 
+               about a thousand and one too many circuit calculations I think). Right now I am working 
+               on a personal project when I can find time outside of class. The project is a clone (with a 
+               few of my own twists) of a game I have been enjoying lately called Balatro. I also want to 
+               eventually enhance this website through better design choices and include more of what I learned 
+               since I created it. (This website was originally created in about a day for a required class to 
+               turn in an ethics essay). I am also excited to start my classes in cybersecurity as I think they will be 
                interesting and very relevant for my career.</p>
-
-            <button id="themeToggle">Toggle Theme</button>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>You can reach me at ojewell@iastate.edu</p>
+            <h2 style="color: #45a049">Contact Me</h2>
+            <p style="color: #45a049">You can reach me at ojewell1073@gmail.com</p>
         </div> 
     </section>
 
     <footer>
-        <p>&copy; 2023 Owen Jewell</p>
+        <p>&copy; 2022 Owen Jewell</p>
     </footer>
-
-    <script>
-        document.getElementById('themeToggle').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
 </body>
 </html>

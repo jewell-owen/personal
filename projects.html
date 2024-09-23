@@ -3,66 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owen Jewell - Projects</title>
+    <title>Owen Jewell - Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
-            color: brown;
-            background: linear-gradient(to right, #f0f0f0, #fff5f5);
+            font-family: 'Roboto', sans-serif;
+            color: #45a049;
         }
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 40px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: brown;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: darkred;
+            text-align: center; /* Center align text */
         }
         .project {
             margin-bottom: 20px;
             border: 1px solid #ccc;
             padding: 20px;
-            display: inline-block;
+            display: inline-block; /* Display projects in a line */
             width: 100%;
         }
         .project img {
             display: block;
             margin: 0 auto 10px;
-            transition: transform 0.3s ease;
         }
-        .project img:hover {
-            transform: scale(1.05);
+        .project .images-container {
+            display: flex;
+            justify-content: center;
         }
-        #themeToggle {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: brown;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        #themeToggle:hover {
-            background-color: darkred;
-        }
-        .dark-mode {
-            background-color: #333;
-            color: #fff;
+        .project .images-container img {
+            margin: 0 5px;
+            width: 200px;
+            height: auto;
         }
     </style>
 </head>
@@ -71,32 +43,80 @@
         <nav>
             <ul>
                 <li><a href="index.html">About Me</a></li>
-                <li><a href="projects.html" aria-label="View Projects">Projects</a></li>
-                <li><a href="ethics.html">Ethics</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="projects">
+    <section id="projects"> 
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Chess Game</h3>
-                <img src="images/chess.png" alt="Chess Game">
-                <p>This is a chess game I’m developing as a fun side project. It features a dynamic game board, move validation, and a user-friendly UI.</p>
-                <a href="https://github.com/yourusername/chess-game" target="_blank">View on GitHub</a>
+                <div class="images-container" style="margin-bottom: 20px;">
+                    <img src="images/309login.png" alt="Project 3 - Hardware" style="width: 200px; height: 350px;">
+                    <img src="images/309schedule.png" alt="Project 3 - App" style="width: 200px; height: 350px;">
+                </div>
+                <h3><strong>Project 1: Adoption App</strong></h3>
+                <h4>Computer Science 309: Software Development Practices</h4>
+                <p>The first project is for a semester long project in a group of four.
+                    For this project we could choose any topic we wanted. We chose to 
+                    develop an app that would make it eaiser for both a user and an
+                    adoption center to have a successfull and easy adoption process. 
+                    This project is still currently being developed but the main idea is 
+                    to allow users to view adoption center's pet postings to direct message 
+                    questions or schedule an appoinment. I was part of the front end team 
+                    but also worked a bit on the backend. I learned about Andorid programming 
+                    in Android Studio as well as the back end framework SpringBoot. I also learned
+                    Git on a much deeper level.
+                </p>
             </div>
+            <div class="project">
+                <img src="images/project1.png" alt="Project 2" style="width: 200px; height: auto;">
+                <h3><strong>Project 2: Portfolio Website</strong></h3>
+                <h4>Computer Science 319: Construction of User Interfaces</h4>
+                <p>The second project was to develop a single web page using
+                    only two technologies: HTML and CSS. I worked on this project alone.
+                    The project consists of creating a single web page with a menu at 
+                    the top known as the Navigation Bar. We have to include text describing 
+                    ourself and text describing the project. Additionally, we need to include
+                    two images: one image is of ourself and second image is anything
+                    related to the project itself. This project was the starting point
+                    for this website. Through this project and class I learned about HTML, CSS,
+                    and JavaScript.</p>
+            </div>
+            <div class="project">
+                <div class="images-container">
+                    <img src="images/186hardware.png" alt="Project 3 - Hardware" style="width: 200px; height: auto;">
+                    <img src="images/186app.png" alt="Project 3 - App" style="width: 200px; height: auto;">
+                </div>
+                <h3><strong>Project 3: Smart Motorcycle Helmet and App</strong></h3>
+                <h4>Computer Engineering 186: Intro to Computer Engineering II</h4>
+                <p>The third project was for a semester long project class that was 
+                    done in a group of three. We were allowed to choose any topic for 
+                    our project. This project was built with Flutter (a Google cross-platform 
+                    app development framework). We used Arduino Nano sensors combined 
+                    with a crash detection algorithm to broadcast an SMS text message.
+                    This was done using Bluetooth low energy amd it was sent to a list 
+                    of emergency contacts using Twilio API in the event a motorcyle 
+                    crash was detetced. Through this project I learned Dart and the framework
+                    Flutter. I also leanred a bit of C++ through the Arduino IDE. Lastly, I 
+                    learned the basics of Git.
+                </p>
+            </div>
+            <!-- Add more project divs here -->
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Owen Jewell</p>
-    </footer>
+    <section id="contact">
+        <div class="container">
+            <h2 style="color: #45a049">Contact Me</h2>
+            <p style="color: #45a049">You can reach me at ojewell1073@gmail.com</p>
+        </div> 
+    </section>
 
-    <script>
-        document.getElementById('themeToggle').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
+    <footer>
+        <p>&copy; 2022 Owen Jewell</p>
+    </footer>
 </body>
 </html>

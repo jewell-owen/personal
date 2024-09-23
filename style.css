@@ -1,33 +1,46 @@
+/* Header and Navigation Bar */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0; /* Increase padding to make header taller */
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 nav li {
-    margin: 0 20px;
+    margin: 0 30px; /* Increase margin between nav items */
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
+    font-size: 20px; /* Increase font size of nav links */
+    font-weight: bold; /* Bold font for nav links */
 }
 
+nav a:hover {
+    color: #4CAF50; /* Add hover effect to links */
+}
+
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    }
-    img {
+}
+
+/* Image Styling */
+img {
     max-width: 100%;
-    }
-    footer {
+}
+
+/* Footer Styling */
+footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
